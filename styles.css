@@ -40,6 +40,7 @@ section.options {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
 }
 div.option {
     margin: 8px 0;

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Aleo:ital,wght@0,100..900;1,100..900&family=Amiri+Quran&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Fragment+Mono:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Martian+Mono:wght@100..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Orbit&family=Ovo&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Petrona:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&family=Syne+Mono&family=Syne:wght@400..800&family=Unbounded:wght@200..900&family=Xanh+Mono:ital@0;1&family=Yatra+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "happy-times-italic";
+    src: url(Assets/happy-times-NG_italic_master_web.woff);
+  }
+@font-face {
+    font-family:"happy-times-regular";
+    src: url(Assets/happy-times-NG_regular_master_web.woff);
+  }
+
+body {
+    font-optical-sizing: auto;
+    font-family: "happy-times-regular", serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fafafa;
+    margin: 16px 16px 16px 344px;
+    padding: 0;
+    background-image: url(Assets/dotted.svg);
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+section.options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 90%;
+    border: 1px solid #ddd;
+    margin: 16px 16px;
+    padding: 16px 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.option {
+    margin: 8px 0;
+    padding: 8px 4px 8px 4px;
+}
+div.first {
+    padding: 0 0 16px 0;
+}
+div.typeface {
+    padding: 0 0 8px 0;
+}
+div.option-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+div.type-options {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+div.colors {
+    display: flex;
+    justify-content: space-between;
+}
+div.border {
+    border-bottom: 1px dashed currentColor;
+}
+div.colors div {
+    width: fit-content;
+    height: 16px;
+    border: 1px solid #ddd;
+    padding: 4px 16px 8px 16px;
+    border-radius: 16px;
+    text-align: center;
+    transition: border 0.5s;
+}
+div.colors div.selected {
+    font-family: "happy-times-italic";
+    border: 1px dotted currentColor;
+    background-color: #ff0000;
+}
+label {
+    display: block;
+    margin: 8px 0;
+    align-items: baseline;
+    font-family: "Fragment Mono", serif;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+label span {
+    font-size: 12px;
+    float: right;
+}
+input[type="text"] {
+    width: 90%;
+    margin: 0;
+    padding: 4px 4px;
+    border-radius: 4px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    font-family: "happy-times-italic", serif;
+}
+input[type="range"]{
+    appearance: none;
+    width: 100%;
+    background: transparent;
+}
+input[type="range"]:focus{
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+    cursor: pointer;
+    margin-top: -7px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+
+input[type="range"]::-ms-track{
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #171717;
+    transition: 0.1s;
+}
+input[type="checkbox"]:checked{
+    background-color: currentColor;
+}
+textarea.output {
+    font-size: 36px;
+    font-family: "happy-times-regular", serif;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 16px 16px;
+    height: 90vh;
+    width: 90%;
+    background: none;
+    resize: none;
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 8px 0;
+}
+
+div.description {
+    margin: 0;
+    padding: 0;
+    border-top: 1px dashed currentColor;
+}

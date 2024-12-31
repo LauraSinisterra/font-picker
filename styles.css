@@ -68,6 +68,7 @@ div.type-options {
 div.colors {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 div.border {
     border-bottom: 1px dashed currentColor;

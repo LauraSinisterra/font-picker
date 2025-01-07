@@ -106,6 +106,7 @@ input[type="text"] {
     margin: 0;
     padding: 4px 4px;
     border-radius: 4px;
+    color: currentColor;
     border-color: #c7c7c7;
     border-style: solid;
     border-width: 1px;
@@ -157,7 +158,8 @@ input[type="checkbox"]:checked{
 }
 select.custom {
     display: grid;
-    background-color: #fafafa;
+    background-color: transparent;
+    color: currentColor;
     padding: 8px 8px;
     width: fit-content;
     height: fit-content;
